@@ -27,11 +27,12 @@
 }
 
 .searchFormButton {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
   border: 0;
-  background-image: url('https://www.flaticon.com/ru/free-icon/search_149852');
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
@@ -43,18 +44,6 @@
 
 .searchFormButton:hover {
   opacity: 1;
-}
-
-.searchFormButton > label {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  clip-path: inset(50%);
-  border: 0;
 }
 
 .searchFormInput {
@@ -71,4 +60,14 @@
 .searchFormInput::placeholder {
   font: inherit;
   font-size: 18px;
+}
+.searchFormButton .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }

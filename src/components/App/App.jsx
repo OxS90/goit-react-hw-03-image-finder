@@ -66,8 +66,8 @@ class App extends Component {
 
     return (
       <div className={styles.app}>
-        {loading && <Loader />}
         <SearchBar onSubmit={this.handleSubmit} />
+        {loading && <Loader />}
         <ImageGallery imagesGallery={imagesList} />
         {areImages && <Button onClickFunction={this.handleClick} />}
         {!areImages &&
